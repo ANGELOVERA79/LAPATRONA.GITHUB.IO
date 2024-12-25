@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Distribuidora La Patrona</title>
+  <!-- Asegúrate de enlazar tu archivo de estilos CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <!-- En lugar de un id, ponemos un enlace a la página del catálogo -->
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li>
+          <div id="icono-carrito" class="carrito">
+            🛒
+            <span id="contador-carrito" class="carrito-contador">0</span>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección Principal -->
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-contenido">
+        <h1>Distribuidora La Patrona</h1>
+        <p>Los mejores licores y cervezas a un clic de distancia</p>
+        <!-- Ajusta la ruta de la imagen a tu carpeta de proyecto -->
+        <img src="img/imagen_principal.png" alt="LAPATRONA" style="width: 1250px;" height="550px">
+      </div>
+    </section>
+
+    <!-- Sección de Destacados (opcional) -->
+    <section class="destacados">
+      <h2>Productos Destacados</h2>
+      <div class="cards-destacados">
+        <!-- Ejemplos de 3 productos destacados -->
+        <div class="card">
+          <img src="imagenes/havana_club.jpg" alt="Havana Club Original" />
+          <div class="card-info">
+            <h3>Havana Club Original</h3>
+            <p>Ron Puro Cubano</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="imagenes/mistral.jpg" alt="Mistral" />
+          <div class="card-info">
+            <h3>Mistral</h3>
+            <p>Pisco Chileno 35°</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="imagenes/diablo.jpg" alt="Diablo Dark Red" />
+          <div class="card-info">
+            <h3>Diablo Dark Red</h3>
+            <p>Vino Tinto</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal del Carrito (ejemplo con JavaScript) -->
+    <div id="modal-carrito" class="modal-carrito" style="display: none;">
+      <div class="modal-contenido">
+        <span id="cerrar-modal" class="cerrar">&times;</span>
+        <h2>Carrito de Compras</h2>
+        <div id="contenido-carrito">
+          <!-- Contenido del carrito se renderiza con JavaScript -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de Página -->
+  <footer>
+    <div class="contacto" id="contacto">
+      <h3>Contáctanos</h3>
+      <p>📞 Teléfono: +56 9 9150 6884</p>
+      <p>📍 Dirección: Av. las parcelas 4010, Iquique, Chile</p>
+    </div>
+    <div class="redes-sociales">
+      <h3>Síguenos</h3>
+      <a href="#" class="red-social">Instagram</a>
+      <a href="#" class="red-social">Facebook</a>
+      <a href="#" class="red-social">WhatsApp</a>
+    </div>
+    <div class="derechos">
+      <p>© 2024 Distribuidora La Patrona. Todos los derechos reservados.</p>
+      <small>Venta de alcohol solo a mayores de 18 años</small>
+    </div>
+  </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Catálogo de Productos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Catálogo</h1>
+    <p>Descubre nuestra selección de productos y promociones</p>
+
+    <!-- Sección de lista de productos -->
+    <section class="lista-productos">
+      <!-- Añade aquí los productos que deseas mostrar -->
+      <!-- Cachaça 51 -->
+      <article class="producto">
+        <img src="imagenes/cachaca_51.jpg" alt="Cachaça 51" />
+        <h2>Cachaça 51</h2>
+        <p>40% Vol. Presentación 12 x 965 ml</p>
+      </article>
+
+      <!-- Cerveza Becker -->
+      <article class="producto">
+        <img src="imagenes/becker.jpg" alt="Cerveza Becker" />
+        <h2>Cerveza Becker</h2>
+        <p>Pack 12</p>
+      </article>
+
+      <!-- Cerveza Corona -->
+      <article class="producto">
+        <img src="imagenes/corona.jpg" alt="Cerveza Corona" />
+        <h2>Cerveza Corona</h2>
+        <p>Pack 12 o 24</p>
+      </article>
+
+      <!-- Cerveza Budweiser -->
+      <article class="producto">
+        <img src="imagenes/budweiser.jpg" alt="Cerveza Budweiser" />
+        <h2>Cerveza Budweiser</h2>
+        <p>Botellas 330 cc</p>
+      </article>
+
+      <!-- Alto del Carmen -->
+      <article class="producto">
+        <img src="imagenes/alto_del_carmen.jpg" alt="Alto del Carmen" />
+        <h2>Alto del Carmen</h2>
+        <p>Pisco Especial 35°</p>
+      </article>
+
+      <!-- Diablo Dark Red -->
+      <article class="producto">
+        <img src="imagenes/diablo.jpg" alt="Diablo Dark Red" />
+        <h2>Diablo Dark Red</h2>
+        <p>Vino Tinto</p>
+      </article>
+
+      <!-- Cerveza Escudo -->
+      <article class="producto">
+        <img src="imagenes/escudo.jpg" alt="Cerveza Escudo" />
+        <h2>Cerveza Escudo</h2>
+        <p>Pack Latas Silver</p>
+      </article>
+
+      <!-- Havana Club -->
+      <article class="producto">
+        <img src="imagenes/havana_club.jpg" alt="Havana Club" />
+        <h2>Havana Club Original</h2>
+        <p>Ron Añejo 3 Años</p>
+      </article>
+
+      <!-- Cerveza Heineken -->
+      <article class="producto">
+        <img src="imagenes/heineken.jpg" alt="Cerveza Heineken" />
+        <h2>Cerveza Heineken</h2>
+        <p>Pack 4 x 6</p>
+      </article>
+
+      <!-- Gran 120 Blanco -->
+      <article class="producto">
+        <img src="imagenes/santa_rita_120.jpg" alt="Gran 120 Bco" />
+        <h2>Gran 120 Blanco</h2>
+        <p>Vino 1500 cc</p>
+      </article>
+
+      <!-- Ron Abuelo Añejo -->
+      <article class="producto">
+        <img src="imagenes/ron_abuelo.jpg" alt="Ron Abuelo Añejo" />
+        <h2>Ron Abuelo Añejo</h2>
+        <p>Reserva Especial</p>
+      </article>
+
+      <!-- Pisco Mistral -->
+      <article class="producto">
+        <img src="imagenes/mistral.jpg" alt="Pisco Mistral" />
+        <h2>Pisco Mistral</h2>
+        <p>35° | 12 x 1000 cc</p>
+      </article>
+
+      <!-- Havana Club Reserva -->
+      <article class="producto">
+        <img src="imagenes/havana_club.jpg" alt="Havana Club Reserva" />
+        <h2>Havana Club Reserva</h2>
+        <p>Ron Añejo 1 Litro</p>
+      </article>
+
+      <!-- Ron Mitjans Añejo -->
+      <article class="producto">
+        <img src="imagenes/ron_mitjans.jpg" alt="Ron Mitjans" />
+        <h2>Ron Mitjans Añejo</h2>
+        <p>1 Litro | 12 botellas</p>
+      </article>
+
+      <!-- Johnnie Walker Red Label -->
+      <article class="producto">
+        <img src="imagenes/johnnie_walker_red_label.jpg" alt="Johnnie Walker Red Label" />
+        <h2>Johnnie Walker Red Label</h2>
+        <p>Blended Scotch Whisky 1L – 12 botellas</p>
+      </article>
+
+      <!-- Diablo Deep Carmenere -->
+      <article class="producto">
+        <img src="imagenes/diablo_deep_carmenere.jpg" alt="Diablo Deep Carmenere" />
+        <h2>Diablo Deep Carmenere</h2>
+        <p>Vino Tinto</p>
+      </article>
+
+      <!-- Cerveza Sol -->
+      <article class="producto">
+        <img src="imagenes/sol.jpg" alt="Cerveza Sol" />
+        <h2>Cerveza Sol</h2>
+        <p>Pack 4 x 6</p>
+      </article>
+
+      <!-- Pisco Malpaso Especial -->
+      <article class="producto">
+        <img src="imagenes/malpaso.jpg" alt="Pisco Malpaso Especial" />
+        <h2>Pisco Malpaso Especial</h2>
+        <p>35° | 1 Litro</p>
+      </article>
+
+      <!-- Valdivieso -->
+      <article class="producto">
+        <img src="imagenes/valdivieso.jpg" alt="Valdivieso" />
+        <h2>Valdivieso</h2>
+        <p>Vinos Sparkling (Rose, Demi Sec, Moscato, etc.)</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Distribuidora La Patrona - Catálogo</p>
+    <small>Venta de alcohol solo a mayores de 18 años</small>
+  </footer>
+</body>
+</html>
+
+<a href="https://wa.me/56991506884"> <img src="img/whatsapp.jpg" style="width: 85px;" height="85px"></a>

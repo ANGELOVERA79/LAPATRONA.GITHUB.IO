@@ -1,0 +1,221 @@
+/* Created/Modified files during execution:
+- styles.css
+*/
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía base */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fafafa;
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+  color: #007BFF;
+}
+
+/* Encabezado y navegación */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  font-weight: bold;
+  color: #333;
+}
+
+nav ul li a:hover {
+  color: #007BFF;
+}
+
+/* Hero (sección principal) */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f6f6f6;
+}
+
+.hero-contenido {
+  flex: 1 1 300px;
+  padding: 20px;
+}
+
+.hero-imagen {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Botón estilo */
+.boton {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 20px;
+  background-color: #007BFF;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #0056b3;
+}
+
+/* Sección de destacados */
+.destacados {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.destacados h2 {
+  margin-bottom: 20px;
+}
+
+.cards-destacados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 200px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-info {
+  padding: 10px;
+}
+
+/* Carrito estilo (si estás usando modal) */
+.carrito {
+  position: relative;
+  cursor: pointer;
+}
+
+.carrito-contador {
+  background-color: red;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0 6px;
+  font-size: 0.8rem;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Modal Carrito (ejemplo) */
+.modal-carrito {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-contenido {
+  background-color: #fff;
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Sección de productos en catalogo.html */
+.lista-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.producto {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+footer .contacto, .redes-sociales, .derechos {
+  margin-bottom: 10px;
+}
+
+.red-social {
+  margin-right: 10px;
+  color: #666;
+}
+
+.red-social:hover {
+  color: #007BFF;
+}
+
